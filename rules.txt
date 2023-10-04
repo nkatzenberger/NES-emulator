@@ -1,0 +1,7 @@
+CXX = g++
+CXXFLAGS = Wall -W -pedantic -0fast -std = c++0x
+CXXFLAGS += 'pkg-config sdl --libs --cflags'
+nesemu1: nesemu1.o
+o$(CXX) -0 "$@" "$<" $(CXXFLAGS)
+nesemu1.o: nesemu1.cc
+o$(CXX) -0 "$@" "$<" $(CXXFLAGS)
